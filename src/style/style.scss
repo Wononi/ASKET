@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "RG-Standard";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/RG/RG-StandardBook.ttf");
+}
+
+@font-face {
+  font-family: "RG-Standard";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/RG/RG-StandardMedium.ttf");
+}
+
+@font-face {
+  font-family: "RG-Standard";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/RG/RG-StandardBold.ttf");
+}
+
+@font-face {
+  font-family: "JustBreathe";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: url("../fonts/JustBreathe/JustBreathe.otf");
+}
+
+@font-face {
+  font-family: "JustBreathe";
+  font-style: normal;
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: url("../fonts/JustBreathe/JustBreatheBd.otf");
+}
+
+@font-face {
+  font-family: "hand2";
+  font-style: normal;
+  src: url("../fonts/hand/hand2.otf");
+}
+
+@font-face {
+  font-family: "hand3";
+  font-style: normal;
+  src: url("../fonts/hand/hand3.otf");
+}
+
+@font-face {
+  font-family: "hand4";
+  font-style: normal;
+  src: url("../fonts/hand/hand4.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+body {
+  background: #F1F1F1;
+}
+
+.home__title {
+  background: url('../img/bg-green.png') no-repeat center center;
+  min-width: 455px;
+  min-height: 142px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  font-family: "hand4", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: 0.72px;
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+    letter-spacing: 0.48px;
+    background-size: cover;
+    min-width: 344px;
+    min-height: 106px;
+  }
+}
+
+@import 'header';
+@import 'home';
+@import 'footer';
