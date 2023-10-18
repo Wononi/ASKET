@@ -67,6 +67,11 @@ body {
   background: #F1F1F1;
 }
 
+section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .home__title {
   background: url('../img/bg-green.png') no-repeat center center;
   min-width: 455px;

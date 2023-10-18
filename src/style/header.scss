@@ -69,6 +69,24 @@ header {
       background: #2E9164;
     }
   }
+
+  .scroll__nav {
+    position: fixed;
+    margin: 0;
+    top: -150px;
+    padding: 16px;
+    display: flex;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.40);
+    background: #F1F1F1;
+    width: 100%;
+    justify-content: center;
+    z-index: 100;
+    transition: all 0.3s ease;
+
+    &-show {
+      top: 0;
+    }
+  }
   
   @media (max-width: 1349px) {
     .header__wrapper {

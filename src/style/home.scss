@@ -167,11 +167,13 @@
     &__wrapper {
       h2 {
         font-size: 26px;
+        margin: 0;
       }
 
       p {
         font-size: 16px;
         letter-spacing: -0.176px;
+        margin: 0;
       }
     }
 
@@ -193,8 +195,11 @@
       }
 
       &__man {
-        right: -108px;
+        left: 0;
         top: 100px;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
       }
     }
 
@@ -255,7 +260,7 @@
   img {
     max-width: 798.196px;
     position: absolute;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, 0);
   }
 
@@ -331,7 +336,7 @@
     &__wrapper {
       h2 {
         font-size: 26px;
-        margin: 0 0 5px 0;
+        margin: 0;
       }
 
       p {
@@ -377,6 +382,11 @@
       margin-bottom: 29px;
     }
 
+    &-text {
+      display: flex;
+      flex-direction: column;
+    }
+
     h2 {
       margin: 6px 0 8px 0;
       color: #000;
@@ -397,6 +407,8 @@
       font-weight: 500;
       line-height: 150%; /* 36px */
       letter-spacing: -0.264px;
+      max-width: 297px;
+      align-self: flex-end;
     }
   }
 
@@ -420,6 +432,14 @@
       letter-spacing: -0.264px;
       margin: 60px 0 76px 0;
       max-width: 459px;
+
+      span {
+        white-space: pre;
+        
+        &:before {
+          content: '\A';
+        }
+      }
     }
   }
 
@@ -428,7 +448,7 @@
     column-gap: 40px;
 
     &__wrapper {
-      svg:nth-child(4) {
+      &-text svg {
         width: 100%;
       }
     }
@@ -487,6 +507,8 @@
         p {
           text-align: start;
           margin-bottom: 29px;
+          max-width: none;
+          align-self: auto;
 
           span {
             font-weight: 700;
@@ -529,7 +551,7 @@
     &__wrapper {
       h2 {
         font-size: 26px;
-        margin: 0 0 5px 0;
+        margin: 0;
       }
 
       p {
@@ -683,6 +705,8 @@
     }
 
     &__img-wrapper {
+      margin-right: 36px;
+
       .arr-down {
         width: 100%;
       }
@@ -690,6 +714,8 @@
 
     &__swrapper {
       right: auto;
+      margin-top: 70px;
+
       &-img svg {
         width: 100%;
       }
@@ -744,6 +770,7 @@
       &__woman,
       &__man {
         display: block;
+        width: 100vw;
 
         svg {
           position: absolute;
@@ -784,7 +811,7 @@
 
       h2 {
         font-size: 26px;
-        margin: 0 0 5px 0;
+        margin: 0;
       }
 
       p {
@@ -983,7 +1010,7 @@
 
       h2 {
         font-size: 26px;
-        margin: 0 0 5px 0;
+        margin: 0;
       }
 
       p {
@@ -1093,8 +1120,8 @@
       grid-template-rows: repeat(3, fit-content(40%));
       position: relative;
       padding: 40px 25px 60px 21px;
-      background: url("../img/bg-green-ring.png") top left no-repeat;
-      background-size: cover;
+      background: url("../img/bg-green-ring.png") top center no-repeat;
+      background-size: contain;
       width: fit-content;
       justify-self: center;
 
@@ -1479,6 +1506,7 @@
   background: #E8E9EA;
   padding: 100px 0 80px 0;
   margin-top: 50px;
+  max-width: none;
 
   h2 {
     color: #333;
