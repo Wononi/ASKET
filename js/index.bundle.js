@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/style.scss */ \"./style/style.scss\");\n\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/style.scss */ \"./style/style.scss\");\n\nconst observer = new IntersectionObserver(entries => {\n  entries.forEach(entry => {\n    if (!entry.isIntersecting) {\n      document.querySelector('.scroll__nav').classList.add('scroll__nav-show');\n    } else {\n      document.querySelector('.scroll__nav').classList.remove('scroll__nav-show');\n    }\n  });\n});\nobserver.observe(document.querySelector('header nav'));\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
