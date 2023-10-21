@@ -11,3 +11,18 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(document.querySelector('header nav'))
+
+const text = document.querySelector('.download__wrapper p');
+
+const mediaQuery = window.matchMedia('(max-width: 1023px)')
+
+function handleTabletChange(e) {
+    if (e.matches) {
+        text.innerHTML = `скачай<br>установи<br>работай`;
+    } else {
+        text.innerHTML = 'скачай → установи → работай';
+    }
+}
+mediaQuery.addListener(handleTabletChange)
+handleTabletChange(mediaQuery)
+

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+
 @font-face {
   font-family: "RG-Standard";
   font-style: normal;
@@ -23,7 +25,6 @@
   font-family: "JustBreathe";
   font-style: normal;
   font-weight: 400;
-  /* Браузер сначала попробует найти шрифт локально */
   src: url("../fonts/JustBreathe/JustBreathe.otf");
 }
 
@@ -31,26 +32,17 @@
   font-family: "JustBreathe";
   font-style: normal;
   font-weight: 700;
-  /* Браузер сначала попробует найти шрифт локально */
   src: url("../fonts/JustBreathe/JustBreatheBd.otf");
 }
 
 @font-face {
-  font-family: "hand2";
-  font-style: normal;
-  src: url("../fonts/hand/hand2.otf");
+  font-family: "JustBreathe-3";
+  src: url("../fonts/JustBreathe/JustBreatheBdObl3.otf") format('opentype');
 }
 
 @font-face {
-  font-family: "hand3";
-  font-style: normal;
-  src: url("../fonts/hand/hand3.otf");
-}
-
-@font-face {
-  font-family: "hand4";
-  font-style: normal;
-  src: url("../fonts/hand/hand4.otf");
+  font-family: "JustBreathe-7";
+  src: url("../fonts/JustBreathe/JustBreatheBdObl7.otf") format('opentype');
 }
 
 * {
@@ -81,7 +73,7 @@ section {
   justify-content: center;
   color: #000;
   text-align: center;
-  font-family: "hand4", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;

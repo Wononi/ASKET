@@ -83,6 +83,10 @@ header {
     z-index: 100;
     transition: all 0.3s ease;
 
+    .mini-logo {
+      display: block;
+    }
+
     &-show {
       top: 0;
     }
@@ -96,8 +100,6 @@ header {
   }
   
   @media (max-width: 767px) {
-    border-bottom: none;
-
     .header__wrapper {
       svg {
         margin-right: 0;
@@ -110,9 +112,49 @@ header {
       letter-spacing: 0.24px;
       max-width: 288px;
     }
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 50px;
+
+    .header__wrapper {
+      svg {
+        margin-right: 0;
+      }
+    }
 
     nav {
-      display: none;
+      margin-top: 25px;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 16px;
+      column-gap: unset;
+
+      a {
+        font-size: 14px;
+      }
+
+      .header__download {
+        font-size: 14px;
+      }
+    }
+
+    .scroll__nav {
+      justify-content: space-between;
+
+      .mini-logo {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    h1 {
+      color: #000;
+      font-size: 16px;
+      letter-spacing: 0.24px;
+      max-width: 288px;
     }
   }
 }
