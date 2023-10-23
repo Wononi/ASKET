@@ -971,6 +971,7 @@
     letter-spacing: -0.264px;
 
     span {
+      white-space: nowrap;
       letter-spacing: normal;
     }
   }
@@ -1176,6 +1177,7 @@
       background-size: contain;
       width: fit-content;
       justify-self: flex-start;
+      justify-items: center;
 
       svg {
         position: absolute;
@@ -1301,6 +1303,7 @@
 
         p {
           font-size: 14px;
+          max-width: 335px;
 
           &:nth-child(1) {
             font-size: 24px;
@@ -1494,6 +1497,8 @@
   }
   
   @media (max-width: 767px) {
+    margin-top: 79px;
+
     &__wrapper {
       grid-row-gap: 60px;
       &-note__1 {
