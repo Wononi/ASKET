@@ -64,7 +64,7 @@ const observers = new IntersectionObserver(entries => {
 });
 
 let arrSection = [];
-arrSection.push(document.querySelector('.for-what h2'), document.querySelector('.for-who h2'), document.querySelector('.more h2'));
+arrSection.push(document.querySelector('.for-what h2'), document.querySelector('.for-who h2'), document.querySelector('.more__wrapper'));
 
 arrSection.forEach(el => {
     observers.observe(el);
