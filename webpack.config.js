@@ -38,7 +38,16 @@ module.exports = {
     optimization: optimization(),
     plugins: [
         new HtmlWebpackPlugin({
+            filename: "index.html",
             template: "../index.html"
+        }),
+        new HtmlWebpackPlugin({
+            filename: "privacy_policy/index.html",
+            template: "../privacy_policy/index.html"
+        }),
+        new HtmlWebpackPlugin({
+            filename: "terms_of_conditions/index.html",
+            template: "../terms_of_conditions/index.html"
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

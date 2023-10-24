@@ -1,0 +1,50 @@
+.terms_of_conditions {
+  margin-top: 26px;
+  padding: 0 20px 73px 20px;
+
+  &-header {
+    align-items: flex-start;
+
+    h1 {
+      color: #333;
+      text-align: start;
+      font-family: "RG-Standard", sans-serif;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 38.4px */
+      letter-spacing: 0.48px;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding-left: 20px;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    div {
+      h2 {
+        color: #222221;
+        font-family: "RG-Standard", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: #222221;
+        font-family: "RG-Standard", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
