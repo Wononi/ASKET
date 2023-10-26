@@ -49,6 +49,10 @@ module.exports = {
             filename: "terms_of_conditions/index.html",
             template: "../terms_of_conditions/index.html"
         }),
+        new HtmlWebpackPlugin({
+            filename: "redirect/index.html",
+            template: "../redirect/index.html"
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: './style/style.[contenthash].css'

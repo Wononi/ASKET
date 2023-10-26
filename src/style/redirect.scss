@@ -1,0 +1,98 @@
+.redirect {
+  display: grid;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  grid-template-areas: "logo logo"
+                       "title title"
+                       "text text"
+                       "arr arr"
+                       "apple google";
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  h2 {
+    color: #2E9164;
+    text-align: center;
+    font-family: "RG-Standard", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 643px;
+    margin: 69px 0 37px 0;
+    grid-area: title;
+  }
+
+  p {
+    color: #2E9164;
+    text-align: center;
+    font-family: "RG-Standard", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    grid-area: text;
+  }
+
+  &__arrow {
+    margin: 69px 0 37px 0;
+    grid-area: arr;
+  }
+
+  &__apple-banner {
+    grid-area: apple;
+    justify-self: flex-end;
+    margin-right: 9px;
+  }
+
+  &__google-banner {
+    grid-area: google;
+    justify-self: flex-start;
+    margin-left: 9px;
+  }
+
+  &__img-one {
+    position: absolute;
+    top: 49px;
+    left: 196px;
+    z-index: -1;
+  }
+
+  &__img-two {
+    position: absolute;
+    top: 343px;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__img-three {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    z-index: -1;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-areas: "logo"
+                       "title"
+                       "text"
+                       "arr"
+                       "apple"
+                       "google";
+
+    &__apple-banner,
+    &__google-banner {
+      justify-self: center;
+      margin: 9px 0;
+    }
+
+    &__img-one {
+      top: 20px;
+      left: 10px;
+    }
+  }
+}
