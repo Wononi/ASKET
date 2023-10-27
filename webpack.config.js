@@ -39,7 +39,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: "index.html",
-            template: "../index.html"
+            template: "../index.html",
         }),
         new HtmlWebpackPlugin({
             filename: "privacy_policy/index.html",
