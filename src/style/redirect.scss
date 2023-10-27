@@ -91,8 +91,30 @@
     }
 
     &__img-one {
-      top: 20px;
-      left: 10px;
+      top: 0;
+      left: 0;
+
+      svg {
+        width: 27.752px;
+        height: 84px;
+      }
+    }
+
+    &__img-two {
+      top: unset;
+      bottom: 32px;
+
+      svg {
+        width: 82.132px;
+        height: 178px;
+      }
+    }
+
+    &__img-three {
+      svg {
+        width: 130.296px;
+        height: 207.138px;
+      }
     }
   }
 }
