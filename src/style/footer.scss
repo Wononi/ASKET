@@ -6,6 +6,12 @@ footer {
   flex-direction: column;
   padding: 75px 0 126px 0;
 
+  .footer__wrapper {
+    p {
+      display: inline-block;
+    }
+  }
+
   p {
     color: rgba(255,255,255,0.4);
     text-align: center;

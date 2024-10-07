@@ -7,7 +7,9 @@
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "prod": "cross-env NODE_ENV=production webpack --mode production",
     "serv": "cross-env NODE_ENV=development webpack-dev-server --mode development",
-    "watch": "cross-env NODE_ENV=development webpack --mode development --watch"
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
+    "i18n": "static-i18n -l ru -i en -i ru src --localesPath src/locales/",
+    "i18n-watch": "watch 'npm run i18n' src"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +19,7 @@
     "html-webpack-plugin": "^5.5.3",
     "i": "^0.3.7",
     "npm": "^10.1.0",
+    "npm-watch": "^0.13.0",
     "postcss": "^8.4.29",
     "postcss-loader": "^7.3.3",
     "sass": "^1.67.0",

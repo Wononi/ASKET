@@ -1,4 +1,4 @@
-import '../style/style.scss'
+import '../style/style.scss';
 const headerNav = document.querySelector('header nav');
 if (headerNav !== null && headerNav !== undefined) {
     const observer = new IntersectionObserver(entries => {
@@ -19,11 +19,13 @@ const text = document.querySelector('.download__wrapper p');
 if (text !== null && text !== undefined) {
     const mediaQuery = window.matchMedia('(max-width: 1023px)');
 
+    console.log(window.location.pathname)
+
     function handleTabletChange(e) {
         if (e.matches) {
-            text.innerHTML = `скачай<br>установи<br>работай`;
+            window.location.pathname === '/en' ? text.innerHTML = `download<br>install<br>work` : text.innerHTML = `скачай<br>установи<br>работай`;
         } else {
-            text.innerHTML = 'скачай → установи → работай';
+            window.location.pathname === '/en' ? text.innerHTML = 'download → install → work' : text.innerHTML = 'скачай → установи → работай';
         }
     }
     mediaQuery.addListener(handleTabletChange);

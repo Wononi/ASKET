@@ -24,6 +24,7 @@ const excludeSourceMap = () => {
     }
 };
 
+
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
@@ -38,9 +39,19 @@ module.exports = {
     optimization: optimization(),
     plugins: [
         new HtmlWebpackPlugin({
+            // inject: false,
             filename: "index.html",
-            template: "../index.html",
+            template: "../i18n/index.html",
         }),
+        new HtmlWebpackPlugin({
+            // inject: false,
+            filename: "en/index.html",
+            template: "../i18n/en/index.html",
+        }),
+        // new HtmlWebpackPlugin({
+        //     filename: "index.html",
+        //     template: "../index.html",
+        // }),
         new HtmlWebpackPlugin({
             filename: "privacy_policy/index.html",
             template: "../privacy_policy/index.html"

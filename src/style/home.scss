@@ -272,11 +272,18 @@
     }
   }
 
-  img {
-    max-width: 798.196px;
+  &__img {
     position: absolute;
     left: 48%;
+    top: 0;
     transform: translate(-50%, 0);
+
+    img {
+      max-width: 798.196px;
+      position: absolute;
+      left: 48%;
+      transform: translate(-50%, 0);
+    }
   }
 
   &__text {
@@ -344,10 +351,15 @@
       }
     }
 
-    img {
+    &__img {
       position: static;
       transform: none;
-      width: 100%;
+
+      img {
+        position: static;
+        transform: none;
+        width: 100%;
+      }
     }
 
     &__text {
@@ -797,8 +809,16 @@
     &__img-wrapper {
       margin-right: 0;
 
+      .arr-left {
+        left: 27px;
+      }
+
+      .arr-right {
+        right: 27px;
+      }
+
       .arr-left,
-      .arr-right{
+      .arr-right {
         top: 30%;
       }
 
@@ -1580,9 +1600,9 @@
 
   &__wrapper {
     display: grid;
-    grid-template-areas: "title title title title title title"
-                         "logo text text text text text"
-                         "apple apple apple google google google";
+    grid-template-areas: "title title title"
+                         "logo text text"
+                         "links links links";
     width: fit-content;
     grid-row-gap: 40px;
     margin: 0 auto;
@@ -1618,18 +1638,11 @@
       line-height: 150%; /* 96px */
     }
 
-    a {
-      &:nth-child(4) {
-        grid-area: apple;
-        justify-self: flex-end;
-        margin-left: 123px;
-      }
-
-      &:nth-child(5) {
-        grid-area: google;
-        justify-self: flex-start;
-        margin-left: 50px;
-      }
+    &-links {
+      grid-area: links;
+      display: flex;
+      justify-content: center;
+      column-gap: 50px;
     }
   }
   
@@ -1638,7 +1651,8 @@
       display: grid;
       grid-template-areas: "logo logo logo"
                          "title title title"
-                         "apple text google";
+                         "text text text"
+                         "links links links";
       max-width: 933px;
       grid-row-gap: 40px;
       margin: 0 auto;
