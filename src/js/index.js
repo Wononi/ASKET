@@ -19,13 +19,11 @@ const text = document.querySelector('.download__wrapper p');
 if (text !== null && text !== undefined) {
     const mediaQuery = window.matchMedia('(max-width: 1023px)');
 
-    console.log(window.location.pathname)
-
     function handleTabletChange(e) {
         if (e.matches) {
-            window.location.pathname === '/en' ? text.innerHTML = `download<br>install<br>work` : text.innerHTML = `скачай<br>установи<br>работай`;
+            window.location.pathname.indexOf('en') !== -1 ? text.innerHTML = `download<br>install<br>work` : text.innerHTML = `скачай<br>установи<br>работай`;
         } else {
-            window.location.pathname === '/en' ? text.innerHTML = 'download → install → work' : text.innerHTML = 'скачай → установи → работай';
+            window.location.pathname.indexOf('en') !== -1 ? text.innerHTML = 'download → install → work' : text.innerHTML = 'скачай → установи → работай';
         }
     }
     mediaQuery.addListener(handleTabletChange);
